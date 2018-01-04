@@ -1,0 +1,85 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/backgroundImageView"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/b"
+        android:id="@+id/logoImageView"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_alignRight="@+id/usernameEditText"
+        android:layout_alignEnd="@+id/usernameEditText"
+        android:id="@+id/passEditText"
+        android:hint="Enter Password..." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="110dp"
+        android:id="@+id/usernameEditText"
+        android:layout_below="@+id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Username..." />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passEditText"
+        android:layout_alignRight="@+id/logoImageView"
+        android:layout_alignEnd="@+id/logoImageView"
+        android:id="@+id/button"
+        android:onClick="buttonClick" />
+
+    <TextView
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/switchTextView"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:onClick="switchText" />
+
+</RelativeLayout>
