@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
                 }
             }
         });
-        System.out.println("Sign In");
+        //System.out.println("Sign In");
     }
 
     public void signUp(){
